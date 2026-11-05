@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,55 +8,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mi Vivero</title>
+    <title>Mi página web</title>
 
-    <!-- Bootstrap 5.3.3 -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- COLORES Y DISEÑO -->
     <style>
+
         body {
-            background-color: #f5f8f2;
+            background-color: #f5f5f5;
         }
 
-        /* LOGO */
-        .logo {
-            height: 65px;
-            width: auto;
+        /* Color de la barra de navegacion */
+        .barra {
+            background-color: #198754;
         }
 
-        /* ENCABEZADO */
+        /* Color del encabezado */
         .encabezado {
-            background-color: #e3efdc;
-            padding: 35px 15px;
+            background-color: #dff0df;
+            padding: 30px;
         }
 
-        /* TARJETAS */
-        .card-img-top {
-            height: 210px;
+        /* Tamaño del logo */
+        .logo {
+            width: 100px;
+        }
+
+        /* Tamaño de las imagenes */
+        .imagen {
+            height: 180px;
             object-fit: cover;
         }
 
-        .card {
-            height: 100%;
-            border: none;
-            box-shadow: 0 3px 10px #00000015;
-        }
-
-        /* PIE DE PAGINA */
+        /* Pie de pagina */
         footer {
             background-color: #244b35;
             color: white;
-            padding: 30px 15px;
+            padding: 25px;
         }
 
-        footer a {
-            color: #d7edcf;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 
 </head>
@@ -64,45 +57,26 @@
 
     <!-- BARRA DE NAVEGACION -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark barra">
+
         <div class="container">
 
-            <a class="navbar-brand fw-bold" href="#">
-                MI VIVERO
+            <a class="navbar-brand" href="#">
+                MI PAGINA
             </a>
 
-            <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menu">
+            <div class="navbar-nav ms-auto">
 
-                <span class="navbar-toggler-icon"></span>
+                <a class="nav-link" href="#inicio">Inicio</a>
 
-            </button>
+                <a class="nav-link" href="#contenido">Contenido</a>
 
-            <div class="collapse navbar-collapse" id="menu">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#inicio">Inicio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#flores">Nuestras flores</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#consejos">Consejos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-
-                </ul>
+                <a class="nav-link" href="#contacto">Contacto</a>
 
             </div>
+
         </div>
+
     </nav>
 
 
@@ -110,16 +84,13 @@
 
     <header class="encabezado text-center" id="inicio">
 
-        <img src="fotos/logo-vivero.jpg"
-             class="logo mb-3"
-             alt="Logo del vivero">
+        <!-- CAMBIAR LOGO -->
+        <img src="fotos/logo.jpg" class="logo" alt="Logo">
 
-        <h1 class="text-success fw-bold">
-            Vivero y consejos para tus plantas
-        </h1>
+        <h1>Nombre de mi página</h1>
 
-        <p class="lead">
-            Un espacio para conocer, cuidar y disfrutar de la naturaleza.
+        <p>
+            Escribí aquí una presentación de tu página web.
         </p>
 
     </header>
@@ -129,141 +100,35 @@
 
     <main class="container my-5">
 
-        <!-- PRESENTACION -->
+        <h2 class="text-center mb-4">
+            Nuestro contenido
+        </h2>
 
-        <section class="text-center mb-5">
-
-            <h2 class="text-success">Bienvenidos a nuestro vivero escolar</h2>
-
-            <p class="mt-3">
-                Aquí encontrarás diferentes variedades de flores y plantas.
-                Conoce sus características, aprende a cuidarlas y descubre
-                cómo llenar tu hogar de naturaleza y color.
-            </p>
-
-        </section>
+        <p class="text-center">
+            Escribí aquí un párrafo para presentar el tema.
+        </p>
 
 
-        <!-- CUATRO TARJETAS -->
+        <!-- TARJETAS CON IMAGENES -->
 
-        <section id="flores">
-
-            <h2 class="text-center text-success mb-4">
-                Nuestras flores
-            </h2>
-
-            <div class="row g-4">
-
-                <!-- FLOR 1 -->
-
-                <div class="col-12 col-sm-6 col-lg-3">
-
-                    <div class="card">
-
-                        <img src="fotos/margaritas.JPG"
-                             class="card-img-top"
-                             alt="Margaritas">
-
-                        <div class="card-body text-center">
-
-                            <h4 class="card-title text-success">
-                                Margaritas
-                            </h4>
-
-                            <p class="card-text">
-                                Las margaritas son flores alegres y
-                                resistentes. Necesitan buena iluminación
-                                y riego moderado para crecer sanas.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
+        <div class="row g-4" id="contenido">
 
 
-                <!-- FLOR 2 -->
+            <!-- TARJETA 1 -->
 
-                <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-md-3">
 
-                    <div class="card">
+                <div class="card">
 
-                        <img src="fotos/rosas.JPG"
-                             class="card-img-top"
-                             alt="Rosas">
+                    <img src="fotos/imagen1.jpg" class="card-img-top imagen" alt="Imagen 1">
 
-                        <div class="card-body text-center">
+                    <div class="card-body">
 
-                            <h4 class="card-title text-success">
-                                Rosas
-                            </h4>
+                        <h5 class="card-title">Título 1</h5>
 
-                            <p class="card-text">
-                                Las rosas se destacan por sus colores
-                                y perfumes. Necesitan sol, poda y
-                                cuidados periódicos.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- FLOR 3 -->
-
-                <div class="col-12 col-sm-6 col-lg-3">
-
-                    <div class="card">
-
-                        <img src="fotos/jazmin.JPG"
-                             class="card-img-top"
-                             alt="Jazmín">
-
-                        <div class="card-body text-center">
-
-                            <h4 class="card-title text-success">
-                                Jazmín
-                            </h4>
-
-                            <p class="card-text">
-                                El jazmín es conocido por su delicado
-                                aroma. Es ideal para jardines y
-                                espacios luminosos.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- FLOR 4 -->
-
-                <div class="col-12 col-sm-6 col-lg-3">
-
-                    <div class="card">
-
-                        <img src="fotos/clavel.JPG"
-                             class="card-img-top"
-                             alt="Clavel">
-
-                        <div class="card-body text-center">
-
-                            <h4 class="card-title text-success">
-                                Clavel
-                            </h4>
-
-                            <p class="card-text">
-                                Los claveles ofrecen una gran variedad
-                                de colores. Son flores ornamentales
-                                muy apreciadas.
-                            </p>
-
-                        </div>
+                        <p class="card-text">
+                            Escribí aquí una descripción.
+                        </p>
 
                     </div>
 
@@ -271,21 +136,86 @@
 
             </div>
 
-        </section>
+
+            <!-- TARJETA 2 -->
+
+            <div class="col-md-3">
+
+                <div class="card">
+
+                    <img src="fotos/imagen2.jpg" class="card-img-top imagen" alt="Imagen 2">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Título 2</h5>
+
+                        <p class="card-text">
+                            Escribí aquí una descripción.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
-        <!-- CONSEJOS -->
+            <!-- TARJETA 3 -->
 
-        <section id="consejos" class="my-5 p-4 bg-white rounded shadow-sm">
+            <div class="col-md-3">
 
-            <h2 class="text-success text-center mb-3">
-                Consejos para cuidar tus plantas
-            </h2>
+                <div class="card">
 
-            <p class="text-center">
-                Recuerda controlar el riego, elegir un lugar con buena
-                iluminación y utilizar tierra adecuada para cada especie.
-                ¡Una planta bien cuidada puede acompañarte durante muchos años!
+                    <img src="fotos/imagen3.jpg" class="card-img-top imagen" alt="Imagen 3">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Título 3</h5>
+
+                        <p class="card-text">
+                            Escribí aquí una descripción.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TARJETA 4 -->
+
+            <div class="col-md-3">
+
+                <div class="card">
+
+                    <img src="fotos/imagen4.jpg" class="card-img-top imagen" alt="Imagen 4">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">Título 4</h5>
+
+                        <p class="card-text">
+                            Escribí aquí una descripción.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- INFORMACION ADICIONAL -->
+
+        <section class="text-center my-5">
+
+            <h2>Más información</h2>
+
+            <p>
+                Agregá aquí información relacionada con el tema de tu página.
             </p>
 
         </section>
@@ -295,95 +225,28 @@
 
     <!-- PIE DE PAGINA -->
 
-    <footer id="contacto">
+    <footer id="contacto" class="text-center">
 
-        <div class="container">
+        <h4>Contacto</h4>
 
-            <div class="row text-center text-md-start g-4">
+        <p>Nombre: Escribí tu nombre</p>
 
-                <!-- COLUMNA 1 -->
+        <p>Correo: tucorreo@email.com</p>
 
-                <div class="col-md-4">
+        <p>Redes sociales: @mi_pagina</p>
 
-                    <h5>Mi Vivero</h5>
+        <hr>
 
-                    <p>
-                        Un espacio dedicado a las plantas,
-                        las flores y el cuidado de la naturaleza.
-                    </p>
-
-                </div>
-
-
-                <!-- COLUMNA 2 -->
-
-                <div class="col-md-4">
-
-                    <h5>Contacto</h5>
-
-                    <p>
-                        Dirección: Calle Principal 123
-                    </p>
-
-                    <p>
-                        Teléfono: 11 1234-5678
-                    </p>
-
-                    <p>
-                        Email: contacto@mivivero.com
-                    </p>
-
-                </div>
-
-
-                <!-- COLUMNA 3 -->
-
-                <div class="col-md-4">
-
-                    <h5>Seguinos</h5>
-
-                    <p>
-                        Instagram: @mivivero
-                    </p>
-
-                    <p>
-                        Facebook: Mi Vivero
-                    </p>
-
-                    <p>
-                        Horarios: Lunes a sábados de 9 a 18 hs.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <hr class="border-light">
-
-            <div class="text-center">
-
-                <p class="mb-0">
-                    Autor: Nombre del alumno | Año 2026
-                </p>
-
-                <small>
-                    Todos los derechos reservados.
-                </small>
-
-            </div>
-
-        </div>
+        <p>
+            Autor: Nombre del alumno - Año 2026
+        </p>
 
     </footer>
 
-
-    <!-- JAVASCRIPT DE BOOTSTRAP -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
-
 </body>
+
 </html>
+
 
  
 
